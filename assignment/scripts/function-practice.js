@@ -43,9 +43,9 @@ return (3 * 4 * 1);
 //    or greater than zero, and false otherwise
 function isPositive(number){
   if (number){
-    return;
+    return (number >= 0);
   }
-    return;
+    return (number < 0);
 }
 
 // Call the function to test each outcome (true & false) 
@@ -54,6 +54,7 @@ function isPositive(number){
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'isPositive - should say false', isPositive(45) );
 
 
 
