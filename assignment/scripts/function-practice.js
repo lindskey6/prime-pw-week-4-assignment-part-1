@@ -28,7 +28,7 @@ console.log(helloName());
 function addNumbers(firstNumber){
   
   // return firstNumber + secondNumber;
-  return (4 + 6);
+  return (7 + 6);
 }
 
 console.log(addNumbers());
@@ -42,10 +42,7 @@ return (3 * 4 * 1);
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number){
-  if (number){
-    return (number >= 0);
-  }
-    return (number < 0);
+  return number > 0;
 }
 
 // Call the function to test each outcome (true & false) 
@@ -54,23 +51,34 @@ function isPositive(number){
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-console.log( 'isPositive - should say false', isPositive(45) );
 
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-
+const colorArray = ['red', 'blue', 'green', 'black', 'pink'];
+function getLast(color) {
+  return colorArray[colorArray.length-1];
 }
+
+console.log(getLast());
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
-}
 
+ // list of games 
+ arrayGames = ['apex', 'valorant', 'osu!', 'rainbowsix siege'];
+function find( value, array ){
+   for (let i = 0; i < array.length; i++){
+    if(value === array[i]){
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+console.log(find('apex', arrayGames));
 // ----------------------
 // Stretch Goals
 // ----------------------
