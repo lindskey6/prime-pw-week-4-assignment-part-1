@@ -1,49 +1,43 @@
 console.log('***** Function Practice *****')
-
-// Add the required code to complete the functions below
-// After _each_ function, use a console log to call the function
-// to test it and display the result
-
-// 1. Function to return 'Hello World!'
+// Q1.
 function hello(){
   return 'Hello World!';
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
-console.log(hello());
-
-// 2. Function to return an personalized hello, using the `name` argument.
-//    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name){
-  return 'linssi';
+// Q2.
+function helloName( userFirstName ){
+  return 'your name is: ' + userFirstName;
 }
+console.log('this is helloName function', helloName('Bananas')); 
 
-// Remember to call the function to test
-console.log(helloName());
+// Q3.
+function addNumbers(firstNumber, secondNumber){
+console.log('addNumbers', firstNumber, secondNumber);
+  return firstNumber + secondNumber;
+  }
+  console.log(addNumbers(8, 5));
 
 
-
-// 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber){
-  
-  // return firstNumber + secondNumber;
-  return (7 + 6);
+// Q4.
+function multiplyThree(firstNumber, secondNumber, thirdNumber){
+  console.log('multiplyThree', firstNumber, secondNumber, thirdNumber,)
+return firstNumber * secondNumber * thirdNumber;
 }
+ console.log(multiplyThree(4,5,3));
 
-console.log(addNumbers());
-
-// 4. Function to multiply three numbers & return the result
-function multiplyThree(){
-return (3 * 4 * 1);
+// Q5.
+function isPositive( number ) {
+  if ( number > 0 ){
+    return true;
+  } 
+  return false;
 }
- console.log(multiplyThree());
+console.log(isPositive(-1));
+console.log(isPositive(5));
+console.log(isPositive(-4));
 
-// 5. Function that will return true if a number is positive, 
-//    or greater than zero, and false otherwise
-function isPositive(number){
-  return number > 0;
-}
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -52,43 +46,66 @@ console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
+// Q6.
 
 
-// 6. Function to return the _last_ item in an array. If the 
-//    array is empty, return `undefined`.
-const colorArray = ['red', 'blue', 'green', 'black', 'pink'];
-function getLast(color) {
-  return colorArray[colorArray.length-1];
+function getLast( arrayOfItems ) {
+  if (arrayOfItems.length > 0) {
+    return arrayOfItems[ arrayOfItems.length - 1 ];
+  }
+  return undefined;
 }
+console.log( "this is getLast", getLast([1,2,3,4]), "should be", 4);
+console.log( "this is getLast", getLast([]), 'should be', undefined);
 
-console.log(getLast());
+// Hey Chris! Can you go into // Q6 a little more?
 
-// 7. Function to find a value in an array. Return true if the 
-//    value is found and false otherwise. Use a loop;
-//    DO NOT use Array.includes, Array.indexOf, or Array.find 
+// while going over this assignment, it's making more sense on 
+// how to write functions.
+// however. I noticed when I console.log, I tend to log
+// what I think it would look like instead of writing down 
+// what the outcome will actually be.
+// ^^^ does that make sense?
 
- // list of games 
- arrayGames = ['apex', 'valorant', 'osu!', 'rainbowsix siege'];
-function find( value, array ){
-   for (let i = 0; i < array.length; i++){
-    if(value === array[i]){
-      return true;
-    } else {
-      return false;
+// What I am trying to say; I want to solidify my testing 
+// methods, ideas, and planning.
+// Any suggestions/tips?
+
+
+
+// Q7. 
+function find( value, colors ){
+  let foundMatch = false;
+  for(let color of colors) {
+    if (value === color){
+      foundMatch = true;
     }
   }
+  return foundMatch;
 }
-console.log(find('apex', arrayGames));
-// ----------------------
-// Stretch Goals
-// ----------------------
-// 8. Function to check if a letter is the first letter in a 
-//    string. Return true if it is, and false otherwise
+
+// Hey chris! for question 7. I understand what to do, I still have a 
+// hard time trying to figure out how to write this function. 
+// May I get another example over a review session soon?
+
+console.log(find('red', ['red', 'green', 'yellow']), 'this should be true');
+
+// Q8.
 function isFirstLetter(letter, string) {
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+
+
+
+
+
+
+
+
+
+
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {

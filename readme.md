@@ -23,3 +23,26 @@ After completing each function. Make sure to call (or use) the function in your 
 
 ## Assignment Submission
 Check in your repo, then turn in your work via the Prime Academy Assignment Application at http://primeacademy.io, as usual and don't hesitate to hit up the Slack channel as needed!
+
+
+
+
+// Add the required code to complete the functions below
+// After _each_ function, use a console log to call the function
+// to test it and display the result
+
+<!-- // 1. Function to return 'Hello World!' -->
+
+<!-- // 2. Function to return an personalized hello, using the `name` argument.
+//    for example 'Hello, Jo!', or 'Hello, Stacy!': [ ] Remember to call the function to test -->
+
+// 
+
+
+
+
+// jquery lecture added more context to JS. It'll make sense soon! -LCR07082022 
+// [ ] work on asking questions <-- Self Challenge
+// 1. 
+// 2.
+// 3.
